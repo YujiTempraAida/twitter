@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div id="twitter"></div>
+  <input type="text" id="url"></input>
+  <button id="send">send</button>
+
+  <script>
+    const tweetReplicant = nodecg.Replicant('tweet', { defaultValue: "" });
+
+    tweetReplicant.on('change', value => {
+      document.getElementById('twitter').textContent = `${value}`;
+    });
+
+    document.getElementById('send').addEventListener('click', () => {
+        const tweetUrl = document.getElementById('url').value;
+        tweetReplicant.value = tweetUrl;
+    });
+  </script>
+</body>
+</html>
