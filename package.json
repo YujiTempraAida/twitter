@@ -1,0 +1,31 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "nodecg": {
+    "compatibleRange": "^2.1.1",
+    "dashboardPanels": [
+      {
+        "name": "twitter",
+        "title": "Twitter",
+        "width": 2,
+        "file": "dashboard.html",
+        "headerColor": "#525F78"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "graphics.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}
