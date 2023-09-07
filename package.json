@@ -27,5 +27,8 @@
         "height": 1080
       }
     ]
+  },
+  "dependencies": {
+    "puppeteer": "^21.1.1"
   }
 }

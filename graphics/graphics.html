@@ -14,22 +14,23 @@
       width: 1920px;
       height: 1080px;
     }
-    #twitter {
+    .twitter {
       width: 1920px;
       background: rgba(65, 105, 225, 0.8);
       color: white;
       font-family: sans-serif;
-      font-size: 10rem;
+      font-size: 2rem;
       text-align: center;
     }
   </style>
 </head>
 <body>
-  <div id="twitter"></div>
-  <script>
-    nodecg.Replicant('tweet', { defaultValue: "" }).on('change', value => {
-      document.getElementById('twitter').textContent = `${value}`;
-    });
-  </script>
+  <div id="tweetUrl" class="twitter"></div>
+  <div  class="twitter"><img id="iconUrl" src=""></div>
+  <div id="userName" class="twitter"></div>
+  <div id="userId" class="twitter"></div>
+  <div id="message" class="twitter"></div>
+  <div  class="twitter"><img id="imageUrl"></div>
+  <script src="./graphics.js"></script>
 </body>
 </html>
